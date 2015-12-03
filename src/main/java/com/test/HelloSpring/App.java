@@ -13,7 +13,7 @@ public class App
     	System.out.println( "Hello World!" );
     	ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
     	Restaurant rObject= (Restaurant)context.getBean("restaurantBean");
-    	rObject.greetCustomer();
+    	rObject.prepareHotDrink();
         System.out.println( "Hello World!" );
     }
 }

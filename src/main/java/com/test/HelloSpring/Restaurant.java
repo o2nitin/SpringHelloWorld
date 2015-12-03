@@ -3,16 +3,16 @@ package com.test.HelloSpring;
 public class Restaurant {
 
 	
-	String welcomeNote;
+	IHotDrink hotDrink;
+	
+	public Restaurant(IHotDrink hotDrink) {
 
-	public void setWelcomeNote(String welcomeNote) {
-
-		this.welcomeNote = welcomeNote;
+		this.hotDrink = hotDrink;
 	}
+	
+	public void prepareHotDrink() {
 
-	public void greetCustomer() {
-
-		System.out.println(welcomeNote);
+		hotDrink.prepareHotDrink();
 	}
 
 }

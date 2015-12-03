@@ -3,8 +3,16 @@ package com.test.HelloSpring;
 public class Restaurant {
 
 	
+	String welcomeNote;
+
+	public void setWelcomeNote(String welcomeNote) {
+
+		this.welcomeNote = welcomeNote;
+	}
+
 	public void greetCustomer() {
 
-		System.out.println("welcome to our restaurant!!");
+		System.out.println(welcomeNote);
 	}
+
 }

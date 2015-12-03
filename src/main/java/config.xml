@@ -4,6 +4,7 @@
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
  
 	<bean id="restaurantBean" class="com.test.HelloSpring.Restaurant">
+	<property name="welcomeNote" value="welcome to our Restaurant!!"></property>
 	</bean>
  
 </beans>
